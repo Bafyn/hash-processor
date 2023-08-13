@@ -15,3 +15,6 @@ The task is to implement two applications that generate and process data using R
 ## Extra features
 - Split generated hashes into batches and send them into RabbitMQ in parallel.
 - Retrieve hashes from the database without recalculating data on the fly.
+
+## Application Architecture
+![hash-processor-architecture](hash-processor-architecture.png)
