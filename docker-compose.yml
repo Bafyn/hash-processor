@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    hostname: "rabbitmq-host"
+    environment:
+      RABBITMQ_DEFAULT_USER: "admin"
+      RABBITMQ_DEFAULT_PASS: "Secure@Password123" # Use .env files to override the value instead of specifying it here
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  # redis:
+  #   image: redis
+  #   ports:
+  #     - "6379:6379"

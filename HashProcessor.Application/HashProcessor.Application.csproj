@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HashProcessor.Domain\HashProcessor.Domain.csproj" />
+    <ProjectReference Include="..\HashProcessor.RabbitMQ\HashProcessor.RabbitMQ.csproj" />
+    <ProjectReference Include="..\HashProcessor.Redis\HashProcessor.Redis.csproj" />
+  </ItemGroup>
+
+</Project>
